@@ -1,5 +1,18 @@
-const Navbar = () => {
-	return <div>Navbar</div>;
-};
+import { Link } from 'react-router-dom'
+import { CartButton, Logo } from '../'
+import Wrapper from '../../assets/wrappers/Navbar'
 
-export default Navbar;
+const Navbar = () => {
+	return (
+		<Wrapper>
+			<div className='nav-center'>
+				<Link to='/'>
+					<Logo />
+				</Link>
+				<CartButton />
+			</div>
+		</Wrapper>
+	)
+}
+
+export default Navbar
