@@ -1,9 +1,9 @@
 import Home from './Home/Home'
 import Cart from './Cart/Cart'
-import Book from './Book/Book'
+import BookDetail from './BookDetail/BookDetail'
 
 export {
   Home,
   Cart,
-  Book
+  BookDetail
 }

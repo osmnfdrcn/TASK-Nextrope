@@ -31,7 +31,7 @@ Variables
   --clr-white: #fff;
 
   --clr-black: #222;
-  --transition: all 0.3s linear;
+  --transition: all 0.5s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --max-width: 1370px;
@@ -111,22 +111,22 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
 }
-  
+
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 20px;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 18px;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 16px;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 14px;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 12px;
   }
   body {
     font-size: 1rem;
@@ -142,7 +142,10 @@ p {
 
 /* section */
 .section {
+  position: relative;
+  top: 4rem;
   padding: 5rem 0;
+  min-height: calc(100vh - 5rem);
 }
 .section-center {
   width: 90vw;
@@ -183,19 +186,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-.title {
-  text-align: center;
-}
-
 /* form */
-
 .form {
   width: 90vw;
   max-width: var(--fixed-width);

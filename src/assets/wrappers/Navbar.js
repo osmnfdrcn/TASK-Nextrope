@@ -7,6 +7,7 @@ const Wrapper = styled.nav`
   right: 0;
   box-shadow: var(--shadow-1);
   background-color: var(--clr-white);
+  z-index: 1001;
   .nav-center {
     display: flex;
     align-items: center;

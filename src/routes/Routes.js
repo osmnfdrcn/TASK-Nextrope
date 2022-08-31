@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   Home,
   Cart,
-  Book
+  BookDetail
 } from '../pages'
 
 import { Navbar } from '../components';
@@ -18,7 +18,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cart' element={<Cart />} />
-        <Route path='/book/:id' element={<Book />} />
+        <Route path='/book/:id' element={<BookDetail />} />
 
 
         <Route path='*' element={<  Home />} />
