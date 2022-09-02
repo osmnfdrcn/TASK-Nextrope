@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Recruitment task
+The recruitment task is to write a program to represent the process of
+ book purchasing process (retrieving book data from the API, adding and removing
+ products from the basket, filling in the form with personal data necessary
+ order processing).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The solution to the assignment should be placed in the _front_ folder.
+### The application should consist of 3 subpages:
+#### 1. Home page - (completed)
+###### List of functionalities consisting of:
+* downloading data from API after entering the application page (**GET** _/book_),
+* displaying previously downloaded data in a specific format, i.e. each
+ book should be displayed in a specific format, i.e. each book should be represented by one block, which should contain the book's cover, title, author, number
+ book, its title, author, number of pages, and a button:
+    * `Add TO CART' which will add a specific item to the shopping cart.
+* a button that will allow you to go to the shopping cart.
+#### 2. The page presenting the shopping cart (completed)
+###### List functionality consisting of:
+* displaying a list of books selected by the user,
+* the `NEXT` button which will direct to the order summary stage.
+##### 3. A page containing a form necessary to place an order
+###### A list of functionalities consisting of:
+* preparation of a form with fields:
+    * first name,
+    * surname,
+    * city,
+    * postal code.
+* the button "I ORDER AND PAY" after pressing which the data will be sent to the
+ endpoint **POST** _/order_.
+###### Additional functionalities: (completed)
+* form validation.
+### Technical criteria
+* react, (OK)
+* any state management library like redux. (used RTK)
+* Tailwind or bootstrap. (used styled components)
+* implementation in typescript (javascript)
+* automatic tests with possibility of generating coverage report
 
-## Available Scripts
+## API Documentation
+Documentation in OpenAPI 3 format is available by running the mock server
+ and navigating to the address: [localhost:3001/docs](http://localhost:3001/docs).
 
-In the project directory, you can run:
+## Starting the development environment
+Node.js is required (Yarn is additionally recommended). The project requires
+ installation and running the mock server API:
+``bash
+cd api
+yarn
+yarn start
+```
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
