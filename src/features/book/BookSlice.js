@@ -52,6 +52,7 @@ const bookSlice = createSlice({
       state.total_pages = Math.ceil(total_records / records_per_page)
       state.isLoading = false
       state.error = false
+
     },
     [getBooks.rejected]: (state, { payload }) => {
       state.isLoading = false
@@ -65,6 +66,7 @@ const bookSlice = createSlice({
       state.singlebook = data
       state.isLoading = false
       state.error = false
+      state.current_page = 1
     },
     [getSingleBook.rejected]: (state, { payload }) => {
       state.isLoading = false

@@ -185,12 +185,15 @@ p {
 button:disabled {
   cursor: not-allowed;
 }
+.btn-order{
+  margin-top: 30px;
+  position: relative;
+}
 
 /* form */
 .form {
-  width: 90vw;
-  max-width: var(--fixed-width);
-  background: var(--white);
+  max-width: 500px;
+  background: var(--clr-white);
   border-radius: var(--borderRadius);
   padding: 2rem 2.5rem;
   margin: 1rem auto;
@@ -199,11 +202,11 @@ button:disabled {
 
 .form-label {
   display: block;
-  color: var(--grey-400);
-  font-size: var(--smallText);
+  color: var(--clr-grey-5);
+  font-size: 14px;
   margin-bottom: 0.1rem;
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
+  letter-spacing: 2px;
 }
 
 .form-input,
@@ -211,10 +214,10 @@ button:disabled {
 .form-select {
   width: 100%;
   padding: 0.65rem 0.75rem;
-  border-radius: var(--borderRadius);
-  background: var(--backgroundColor);
-  border: 1px solid var(--grey-200);
-  color: var(--grey-600);
+  border-radius: var(--radius);
+  background: var(--clr-white);
+  border: 1px solid var(--clr-grey-7);
+  color: var(--clr-grey-5);
 }
 
 .form-input,
@@ -227,14 +230,13 @@ button:disabled {
   margin-bottom: 1rem;
 }
 
-.form-textarea {
-  height: 7rem;
-}
 .form-error{
   position: relative;
+  z-index: 1001;
   font-size: 13px;
-  color: var(--red-dark);
+  color: var(--clr-primary-1);
   top: -20px;
+  margin-top: 20px;
 }
 
 

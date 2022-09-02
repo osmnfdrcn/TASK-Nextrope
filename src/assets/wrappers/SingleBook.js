@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  opacity: 0.8;
   .book-image{
     width: 100%;
     img {
@@ -18,13 +19,11 @@ const Wrapper = styled.div`
     }
   }
   :hover{
-    box-shadow: var(--shadow-2);
+    opacity: 1;
+    border-radius: 50%;
     transition: var(--transition);
   }
-  :hover > .icon{
-    display: flex;
-    transition: var(--transition);
-  }
+
   footer{
     position: absolute;
     background-color: black;
@@ -49,30 +48,6 @@ const Wrapper = styled.div`
     color: var(--clr-white);
     font-size:10px;
   }
-  .icon{
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: var(--clr-black);
-    svg{
-      color: var(--clr-white);
-      font-size: 25px;
-      
-    }
-    :hover{
-      background-color: var(--clr-primary-4);
-    }
-  }
-
-
 
 `
 

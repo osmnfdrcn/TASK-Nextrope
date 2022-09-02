@@ -4,6 +4,7 @@ import CartButton from "./CartButton/CartButton";
 import Logo from "./Logo/Logo";
 import Spinner from "./Spinner/Spinner";
 import Pagination from "./Pagination/Pagination";
+import AmountButtons from "./AmountButtons/AmountButtons";
 
 export {
   Navbar,
@@ -11,5 +12,6 @@ export {
   CartButton,
   Logo,
   Spinner,
-  Pagination
+  Pagination,
+  AmountButtons
 }
